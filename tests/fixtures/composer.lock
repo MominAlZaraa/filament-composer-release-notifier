@@ -1,0 +1,13 @@
+{
+    "packages": [
+        {
+            "name": "vendor-a/pkg-one",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vendor-a/pkg-one.git"
+            }
+        }
+    ],
+    "packages-dev": []
+}

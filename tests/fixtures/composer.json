@@ -1,0 +1,7 @@
+{
+    "name": "fixture/app",
+    "require": {
+        "vendor-a/pkg-one": "^1.0"
+    },
+    "require-dev": {}
+}

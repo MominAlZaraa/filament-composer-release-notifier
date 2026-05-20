@@ -1,0 +1,81 @@
+{
+    "name": "mominalzaraa/filament-composer-release-notifier",
+    "version": "1.0.0",
+    "description": "Filament plugin that compares composer.json / composer.lock packages with GitHub releases, caches results, and optionally emails a summary report.",
+    "type": "library",
+    "keywords": [
+        "mominalzaraa",
+        "filament",
+        "laravel",
+        "composer",
+        "github",
+        "releases",
+        "notifications",
+        "package"
+    ],
+    "homepage": "https://github.com/MominAlZaraa/filament-composer-release-notifier",
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Momin Al Zaraa",
+            "email": "support@mominpert.com",
+            "homepage": "https://mominpert.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/MominAlZaraa/filament-composer-release-notifier/issues",
+        "source": "https://github.com/MominAlZaraa/filament-composer-release-notifier",
+        "email": "support@mominpert.com"
+    },
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^5.0",
+        "laravel/framework": "^12.0|^13.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.25",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^4.1",
+        "pestphp/pest-plugin-laravel": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MominAlZaraa\\FilamentComposerReleaseNotifier\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MominAlZaraa\\FilamentComposerReleaseNotifier\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "audit": {
+            "abandoned": "ignore"
+        },
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MominAlZaraa\\FilamentComposerReleaseNotifier\\FilamentComposerReleaseNotifierServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
