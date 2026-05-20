@@ -144,21 +144,19 @@ class ComposerReleaseSyncService
             }
 
             $parts = explode('/', $name, 2);
-            $displayOwner = $parts[0] ?? '';
+            $displayOwner = $parts[0];
             $displayRepo = $parts[1] ?? '';
 
             $latest = $this->packagistClient->getLatestStable($name);
             $lastError = null;
             if ($latest === null) {
                 $lastError = 'No stable version found on Packagist (package missing or only dev branches).';
+                $latestVersion = null;
+                $releaseNotes = null;
+            } else {
+                $latestVersion = $latest['version'];
+                $releaseNotes = $latest['release_notes'];
             }
-
-            $latestVersion = is_array($latest) && isset($latest['version']) && is_string($latest['version'])
-                ? $latest['version']
-                : null;
-            $releaseNotes = is_array($latest) && isset($latest['release_notes']) && is_string($latest['release_notes'])
-                ? $latest['release_notes']
-                : null;
 
             $installed = $meta['version'];
             $isOutdated = $this->versionComparator->isOutdated($installed, $latestVersion);

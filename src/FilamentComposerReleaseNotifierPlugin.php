@@ -5,7 +5,7 @@ namespace MominAlZaraa\FilamentComposerReleaseNotifier;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class FilamentComposerReleaseNotifierPlugin implements Plugin
+final class FilamentComposerReleaseNotifierPlugin implements Plugin
 {
     protected ?bool $resourceEnabled = null;
 
@@ -15,7 +15,7 @@ class FilamentComposerReleaseNotifierPlugin implements Plugin
 
     public static function make(): static
     {
-        return new static;
+        return new self;
     }
 
     public function getId(): string

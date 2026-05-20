@@ -106,8 +106,8 @@ class ComposerReleasePackageResource extends Resource
                     ->modalSubmitAction(false)
                     ->modalCancelActionLabel(__('Close'))
                     ->modalWidth(Width::SevenExtraLarge)
-                    ->modalContent(fn (ComposerReleasePackageSnapshot $record): \Illuminate\Contracts\View\View => view(
-                        'filament-composer-release-notifier::filament.modals.package-release-details',
+                    ->modalContent(fn (ComposerReleasePackageSnapshot $record): \Illuminate\Contracts\View\View => view()->file(
+                        dirname(__DIR__, 3).'/resources/views/filament/modals/package-release-details.blade.php',
                         ['record' => $record],
                     )),
             ])

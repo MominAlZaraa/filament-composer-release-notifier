@@ -61,7 +61,7 @@ return [
     'mail' => [
         'recipient_mode' => env('FILAMENT_COMPOSER_RELEASE_NOTIFIER_MAIL_MODE', 'none'), // none | all_panel_users | specific_emails
         'specific_emails' => array_filter(array_map('trim', explode(',', (string) env('FILAMENT_COMPOSER_RELEASE_NOTIFIER_MAIL_TO', '')))),
-        'user_model' => env('FILAMENT_COMPOSER_RELEASE_NOTIFIER_USER_MODEL', \App\Models\User::class),
+        'user_model' => env('FILAMENT_COMPOSER_RELEASE_NOTIFIER_USER_MODEL', 'App\Models\User'),
         'send_when' => env('FILAMENT_COMPOSER_RELEASE_NOTIFIER_MAIL_SEND_WHEN', 'when_outdated'), // always | when_outdated
         'throttle_hours' => (int) env('FILAMENT_COMPOSER_RELEASE_NOTIFIER_MAIL_THROTTLE_HOURS', 24),
         'allow_log_driver' => env('FILAMENT_COMPOSER_RELEASE_NOTIFIER_MAIL_ALLOW_LOG', false),

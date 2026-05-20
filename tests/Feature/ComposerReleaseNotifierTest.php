@@ -102,8 +102,7 @@ it('syncs snapshots using packagist p2 metadata without github api', function ()
 it('dispatches sync job once per session on login', function () {
     Queue::fake();
 
-    $user = new FilamentTestUser;
-    $user->email = 'test@example.com';
+    $user = new FilamentTestUser(['email' => 'test@example.com']);
 
     session()->flush();
 
@@ -119,8 +118,10 @@ it('dispatches sync job once per session on login', function () {
 it('does not dispatch for users that are not filament users', function () {
     Queue::fake();
 
-    $user = new \Illuminate\Foundation\Auth\User;
-    $user->email = 'plain@example.com';
+    $user = new class extends \Illuminate\Foundation\Auth\User
+    {
+        public string $email = 'plain@example.com';
+    };
 
     session()->flush();
 

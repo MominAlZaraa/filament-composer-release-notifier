@@ -9,6 +9,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Schema;
 use MominAlZaraa\FilamentComposerReleaseNotifier\Mail\ComposerReleaseReportMail;
 use MominAlZaraa\FilamentComposerReleaseNotifier\Models\ComposerReleasePackageSnapshot;
 use MominAlZaraa\FilamentComposerReleaseNotifier\Services\ComposerReleaseSyncService;
@@ -132,7 +133,7 @@ class SyncComposerReleaseSnapshotsJob implements ShouldQueue
 
         if ($mode === 'all_panel_users') {
             try {
-                $class = config('filament-composer-release-notifier.mail.user_model', \App\Models\User::class);
+                $class = config('filament-composer-release-notifier.mail.user_model', 'App\Models\User');
                 if (! is_string($class) || ! class_exists($class)) {
                     return [];
                 }
@@ -141,7 +142,7 @@ class SyncComposerReleaseSnapshotsJob implements ShouldQueue
                 $model = new $class;
                 $query = $model->newQuery();
                 $table = $query->getModel()->getTable();
-                if (! $query->getConnection()->getSchemaBuilder()->hasColumn($table, 'email')) {
+                if (! Schema::connection($model->getConnectionName())->hasColumn($table, 'email')) {
                     return [];
                 }
 
