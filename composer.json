@@ -1,7 +1,7 @@
 {
     "name": "mominalzaraa/filament-composer-release-notifier",
     "version": "1.0.0",
-    "description": "Filament plugin that compares composer.json / composer.lock packages with GitHub releases, caches results, and optionally emails a summary report.",
+    "description": "Filament plugin: Packagist or GitHub version comparison for composer.json / composer.lock, dashboard widget + resource, optional mail — informational only (no composer update).",
     "type": "library",
     "keywords": [
         "mominalzaraa",
@@ -11,7 +11,9 @@
         "github",
         "releases",
         "notifications",
-        "package"
+        "package",
+        "packagist",
+        "developer-tool"
     ],
     "homepage": "https://github.com/MominAlZaraa/filament-composer-release-notifier",
     "readme": "README.md",

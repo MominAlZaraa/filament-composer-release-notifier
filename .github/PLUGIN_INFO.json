@@ -1,0 +1,50 @@
+{
+  "name": "Filament Composer Release Notifier",
+  "slug": "filament-composer-release-notifier",
+  "package": "mominalzaraa/filament-composer-release-notifier",
+  "description": "Filament-first Composer visibility: compare composer.json / composer.lock with Packagist (default) or GitHub releases, dashboard widget, resource with “Check again”, optional email — informational only; run composer update in development.",
+  "repository": "https://github.com/MominAlZaraa/filament-composer-release-notifier",
+  "author_slug": "momin-al-zaraa",
+  "image": "https://raw.githubusercontent.com/MominAlZaraa/filament-composer-release-notifier/main/.github/plugin-banner.jpg",
+  "tags": [
+    "composer",
+    "packagist",
+    "github",
+    "releases",
+    "dependencies",
+    "widget",
+    "developer-tools",
+    "notifications"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "requirements": {
+    "php": "^8.3",
+    "laravel": "^12.0|^13.0",
+    "filament": "^5.0"
+  },
+  "features": [
+    "Default Packagist p2 metadata (no GitHub token required for version checks)",
+    "Optional GitHub Releases + compare API mode",
+    "Filament resource with manual “Check again” sync",
+    "Dashboard stats widget (tracked vs behind)",
+    "Login-triggered queue job with session guard",
+    "Optional HTML email summary",
+    "Browser compare links without GitHub API when using Packagist mode"
+  ],
+  "screenshots": [
+    {
+      "url": "https://raw.githubusercontent.com/MominAlZaraa/filament-composer-release-notifier/main/.github/screenshots/widget-dashboard.png",
+      "caption": "Dashboard widget: tracked packages and how many are behind latest"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/MominAlZaraa/filament-composer-release-notifier/main/.github/screenshots/composer-packages-list.png",
+      "caption": "Composer Packages resource with Check again and version columns"
+    }
+  ],
+  "documentation": "https://github.com/MominAlZaraa/filament-composer-release-notifier#readme",
+  "support": {
+    "email": "support@mominpert.com",
+    "issues": "https://github.com/MominAlZaraa/filament-composer-release-notifier/issues"
+  }
+}
