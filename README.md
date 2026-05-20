@@ -34,22 +34,6 @@
 
 ---
 
-## Quick links
-
-| | |
-| :--- | :--- |
-| **Install** | [`composer require mominalzaraa/filament-composer-release-notifier`](https://packagist.org/packages/mominalzaraa/filament-composer-release-notifier) |
-| **Packagist** | [packagist.org/packages/mominalzaraa/filament-composer-release-notifier](https://packagist.org/packages/mominalzaraa/filament-composer-release-notifier) |
-| **Repository** | [github.com/MominAlZaraa/filament-composer-release-notifier](https://github.com/MominAlZaraa/filament-composer-release-notifier) |
-| **Issues & ideas** | [github.com/.../issues](https://github.com/MominAlZaraa/filament-composer-release-notifier/issues) |
-| **Actions (CI)** | [github.com/.../actions](https://github.com/MominAlZaraa/filament-composer-release-notifier/actions) |
-| **Releases** | [github.com/.../releases](https://github.com/MominAlZaraa/filament-composer-release-notifier/releases) |
-| **Changelog** | [CHANGELOG.md](CHANGELOG.md) |
-| **Filament plugin hub** | [filamentphp.com/author](https://filamentphp.com/author) (submit & manage listings) |
-| **Author profile** | [.github/AUTHOR.md](.github/AUTHOR.md) |
-
----
-
 ## Table of contents
 
 - [Why this exists](#why-this-exists)
