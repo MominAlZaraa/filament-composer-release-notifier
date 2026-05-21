@@ -14,8 +14,6 @@
   <img src=".github/plugin-banner.jpg" alt="Filament Composer Release Notifier" width="100%" />
 </p>
 
-<p align="center"><sub>Repository-relative banner (same pattern as <a href="https://github.com/MominAlZaraa/filament-localization/blob/main/README.md">Filament Localization</a>). A hidden duplicate URL satisfies the <a href="https://github.com/filamentphp/filamentphp.com/blob/main/PLUGIN_REVIEW_GUIDELINES.md">Filament plugin README + hero image</a> guideline when your listing uses the same artwork.</sub></p>
-
 <!-- Same artwork URL as the Filament plugin directory hero: hidden on GitHub (hidden + 0-size) but keeps the duplicate URL for filamentphp.com review tooling / class="filament-hidden". -->
 <img src="https://raw.githubusercontent.com/MominAlZaraa/filament-composer-release-notifier/main/.github/plugin-banner.jpg" alt="" width="0" height="0" class="filament-hidden" hidden decoding="async" />
 
