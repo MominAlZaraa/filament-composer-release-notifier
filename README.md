@@ -10,12 +10,9 @@
 [![GitHub Stars](https://img.shields.io/github/stars/MominAlZaraa/filament-composer-release-notifier?style=flat-square&logo=github)](https://github.com/MominAlZaraa/filament-composer-release-notifier)
 [![Sponsor](https://img.shields.io/github/sponsors/MominAlZaraa?style=flat-square&logo=github)](https://github.com/sponsors/MominAlZaraa)
 
-<p align="center">
-  <img src=".github/plugin-banner.jpg" alt="Filament Composer Release Notifier" width="100%" />
+<p align="center" class="filament-hidden">
+  <img src=".github/plugin-banner.png" alt="Filament Composer Release Notifier" width="100%" />
 </p>
-
-<!-- Same artwork URL as the Filament plugin directory hero: hidden on GitHub (hidden + 0-size) but keeps the duplicate URL for filamentphp.com review tooling / class="filament-hidden". -->
-<img src="https://raw.githubusercontent.com/MominAlZaraa/filament-composer-release-notifier/main/.github/plugin-banner.jpg" alt="" width="0" height="0" class="filament-hidden" hidden decoding="async" />
 
 **Filament-native Composer visibility** — keep your team informed about **newer versions** of the packages declared in `composer.json` and pinned in `composer.lock`, without ever running `composer update` from the panel.
 
@@ -43,7 +40,6 @@
 - [Version source: Packagist vs GitHub](#version-source-packagist-vs-github)
 - [Queue and sync](#queue-and-sync)
 - [Filament and Tailwind v4](#filament-and-tailwind-v4)
-- [Listing on the Filament plugin directory](#listing-on-the-filament-plugin-directory)
 - [Testing](#testing)
 - [Local development](#local-development)
 - [Privacy](#privacy)
@@ -240,19 +236,6 @@ If views live under `vendor/mominalzaraa/filament-composer-release-notifier`, ad
 ```css
 @source '../../vendor/mominalzaraa/filament-composer-release-notifier/resources/views/**/*.blade.php';
 ```
-
----
-
-## Listing on the Filament plugin directory
-
-Plugins are managed from **[filamentphp.com/author](https://filamentphp.com/author)**. This repo includes:
-
-- [.github/FILAMENT_SUBMISSION_GUIDE.md](.github/FILAMENT_SUBMISSION_GUIDE.md) — checklist and official guideline links  
-- [.github/PLUGIN_INFO.json](.github/PLUGIN_INFO.json) — copy-paste fields for the hub  
-- [.github/BANNER_GUIDE.md](.github/BANNER_GUIDE.md) — banner dimensions (16:9, ≥2560×1440 JPEG)  
-- [.github/AUTHOR.md](.github/AUTHOR.md) — author bio for listings  
-
-Official expectations: [Plugin review guidelines](https://github.com/filamentphp/filamentphp.com/blob/main/PLUGIN_REVIEW_GUIDELINES.md).
 
 ---
 
