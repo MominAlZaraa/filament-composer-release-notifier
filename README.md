@@ -9,6 +9,8 @@
 [![Filament](https://img.shields.io/badge/Filament-5.x-F59E0B?style=flat-square)](https://filamentphp.com)
 [![GitHub Stars](https://img.shields.io/github/stars/MominAlZaraa/filament-composer-release-notifier?style=flat-square&logo=github)](https://github.com/MominAlZaraa/filament-composer-release-notifier)
 [![Sponsor](https://img.shields.io/github/sponsors/MominAlZaraa?style=flat-square&logo=github)](https://github.com/sponsors/MominAlZaraa)
+[![Plumb score](https://plumbphp.dev/badges/mominalzaraa/filament-composer-release-notifier/composite.svg)](https://plumbphp.dev/mominalzaraa/filament-composer-release-notifier)
+[![Plumb security score](https://plumbphp.dev/badges/mominalzaraa/filament-composer-release-notifier/security.svg)](https://plumbphp.dev/mominalzaraa/filament-composer-release-notifier)
 
 <p align="center" class="filament-hidden">
   <img src=".github/plugin-banner.png" alt="Filament Composer Release Notifier" width="100%" />
